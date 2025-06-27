@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "leetcode_rating_plugin",
+  "version": "1.0.0",
+  "description": "力扣难度分插件",
+  "icons": {
+    "128": "img/icon.webp",
+    "48": "img/icon.webp",
+    "16": "img/icon.webp"
+  },
+  "action": {
+    "default_icon": "img/icon.webp"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://leetcode.cn/problemset/"
+      ],
+      "js": [
+        "js/content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "tabs"
+  ]
+}
